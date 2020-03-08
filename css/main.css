@@ -97,7 +97,7 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #ffffff;
   height: 100%;
 }
 
@@ -106,19 +106,45 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
-  background-color: rgb(29, 26, 26);
+  background-color: #fff;
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.flex-items {
+    /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+    color: #37371F;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+  }
+
+header {
+  height: 80px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+main {
+    border-bottom: 2px solid #37371F;
+}
+
+header,
+footer,
+main {
+  color: #37371F;  
+  display: flex;
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: #37371F;
   line-height: 1.5em;
   font-size: 1em;
   height: auto;
@@ -130,15 +156,36 @@ body {
 }
 
 .div-1, .div-2 {
-    border-right: rgb(105, 102, 102) solid 1px;
+    border-right: #37371F solid 1px;
     padding-right: 30px;
 
+}
+
+h1 {
+    font-family: 'Lora', serif;
 }
 
 span {
     font-family: 'Lora', serif;
     font-size: 1.4em;
 }
+
+footer {
+    border-top: 2px solid #37371F;
+    flex-flow: row wrap;
+}
+
+footer ul {
+    padding-inline-start: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 10px;    
+}
+
+
 
 
 /* ==========================================================================
